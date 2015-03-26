@@ -1,0 +1,7 @@
+// Contains base styles to apply to the document level.
+
+body {
+  @include font-scale('base', $base-font-scale);
+  font-family: $base-font-family;
+  color: $near-black;
+}

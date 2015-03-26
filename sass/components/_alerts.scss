@@ -1,0 +1,45 @@
+/*doc
+---
+title: Alerts
+name: alerts
+category: Components
+---
+Alerts can be used to display important messages.
+
+```html_example
+<div class="alert alert--info">Information alert</div>
+
+<div class="alert alert--warning">Warning alert</div>
+
+<div class="alert alert--error">Error alert</div>
+
+<div class="alert alert--success">Success alert</div>
+```
+*/
+.alert {
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  color: $near-white;
+}
+
+  .alert--info {
+    background: $blue;
+    border-color: $blue-dark;
+  }
+
+  .alert--warning {
+    background: $yellow;
+    border-color: $yellow-dark;
+  }
+
+  .alert--error {
+    background: $red;
+    border-color: $red-dark;
+  }
+
+  .alert--success {
+    background: $green;
+    border-color: $green-dark;
+  }

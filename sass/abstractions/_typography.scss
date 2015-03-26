@@ -1,0 +1,18 @@
+// Contains any functions and mixins relating to typography.
+
+@function get-font-map($level: 'base', $font-scale: $base-font-scale) {
+  @return map-get($font-scale, $level);
+}
+
+@function get-font-size($name, $font-scale: $base-font-scale) {
+  @return map-get(get-font-map($name, $font-scale), font-size)
+}
+
+@function get-line-height($name, $font-scale: $base-font-scale) {
+  @return map-get(get-font-map($name, $font-scale), line-height)
+}
+
+@mixin font-scale($level, $font-scale: $base-font-scale) {
+  font-size: get-font-size($level, $font-scale);
+  line-height: get-line-height($level, $font-scale);
+}

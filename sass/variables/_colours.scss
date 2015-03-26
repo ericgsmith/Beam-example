@@ -1,0 +1,49 @@
+/*doc
+---
+title: Branding colours
+name: branding
+category: Colours
+---
+Primary branding colours.
+
+```swatch_example
+[$red:#d9534f]
+[$red-dark:#d43f3a]
+[$green:#5cb85c]
+[$green-dark:#4cae4c]
+[$blue:#337ab7]
+[$blue-dark:#204d74]
+[$yellow:#f0ad4e]
+[$yellow-dark:#eea236]
+```
+*/
+$red: #d9534f;
+$red-dark: #d43f3a;
+$green: #5cb85c;
+$green-dark: #4cae4c;
+$blue: #337ab7;
+$blue-dark: #204d74;
+$yellow: #f0ad4e;
+$yellow-dark: #eea236;
+
+/*doc
+---
+title: Monochrome colours
+name: monochrome
+category: Colours
+---
+Monochrome colours.
+
+```swatch_example
+[$near-black:#222]
+[$dark-grey:#888]
+[$mid-greyk:#808080]
+[$light-grey:#ccc]
+[$near-white:#f2f2f2]
+```
+*/
+$near-black: #222;
+$dark-grey: #888;
+$mid-grey: #808080;
+$light-grey: #ccc;
+$near-white: #f2f2f2;

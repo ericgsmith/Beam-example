@@ -1,0 +1,50 @@
+// Contains base styles to apply to tables.
+
+/*doc
+---
+title: Tables
+name: tables
+category: Typography
+---
+These are the table elements you can use site wide.
+
+```html_example_table
+<table>
+  <tr>
+    <th>Table</th>
+    <th>Heading</th>
+  </tr>
+  <tr>
+    <td>Table</td>
+    <td>cell</td>
+  </tr>
+  <tr>
+    <td>Table</td>
+    <td>cell</td>
+  </tr>
+</table>
+```
+*/
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+th {
+  font-weight: bold;
+
+  &:hover {
+    background: $light-grey;
+  }
+}
+
+th,
+td {
+  border-bottom: 1px solid $dark-grey;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}

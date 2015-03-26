@@ -1,0 +1,17 @@
+// File to import all partials.
+
+// Import variables and abstractions.
+@import "variables/colours";
+@import "variables/typography";
+@import "abstractions/typography";
+
+// Import base styles.
+@import "base/document";
+@import "base/lists";
+@import "base/tables";
+@import "base/typography";
+
+// Import components.
+@import "components/alerts";
+@import "components/buttons";
+@import "components/panels";

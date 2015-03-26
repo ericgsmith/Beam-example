@@ -1,0 +1,40 @@
+// Font families.
+$base-font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+$heading-font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+
+// Base font scale - unit agnostic.
+$base-font-scale: (
+  base: (
+    font-size: 14px,
+    line-height: 21px
+  ),
+  small: (
+    font-size: 10px,
+    line-height: 14px
+  ),
+  large: (
+    font-size: 18px,
+    line-height: 28px
+  )
+);
+
+// Heading font scale - unit agnostic.
+$heading-font-scale: (
+  h1: (
+    font-size: 48px,
+    line-height: 56px
+  ),
+  h2: (
+    font-size: 36px,
+    line-height: 42px
+  ),
+  h3: (
+    font-size: 28px,
+    line-height: 35px
+  ),
+  h4: (
+    font-size: 18px,
+    line-height: 21px
+  ),
+);
+

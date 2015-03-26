@@ -1,0 +1,377 @@
+/*doc
+---
+title: Branding colours
+name: branding
+category: Colours
+---
+Primary branding colours.
+
+```swatch_example
+[$red:#d9534f]
+[$red-dark:#d43f3a]
+[$green:#5cb85c]
+[$green-dark:#4cae4c]
+[$blue:#337ab7]
+[$blue-dark:#204d74]
+[$yellow:#f0ad4e]
+[$yellow-dark:#eea236]
+```
+*/
+/*doc
+---
+title: Monochrome colours
+name: monochrome
+category: Colours
+---
+Monochrome colours.
+
+```swatch_example
+[$near-black:#222]
+[$dark-grey:#888]
+[$mid-greyk:#808080]
+[$light-grey:#ccc]
+[$near-white:#f2f2f2]
+```
+*/
+body {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  color: #222; }
+
+/*doc
+---
+title: Lists
+name: lists
+category: Typography
+---
+These are the list elements you can use site wide.
+
+```html_example
+<ul>
+  <li>unordered</li>
+  <li>list</li>
+</ul>
+<ol>
+  <li>ordered</li>
+  <li>list</li>
+</ol>
+<dl>
+  <dt>Definition</dt>
+  <dd>list</dd>
+</dl>
+```
+*/
+ul {
+  list-style-type: disc; }
+
+ol {
+  list-style-type: decimal; }
+
+dl dt {
+  font-weight: bold; }
+dl dd {
+  margin: 0; }
+
+/*doc
+---
+title: Tables
+name: tables
+category: Typography
+---
+These are the table elements you can use site wide.
+
+```html_example_table
+<table>
+  <tr>
+    <th>Table</th>
+    <th>Heading</th>
+  </tr>
+  <tr>
+    <td>Table</td>
+    <td>cell</td>
+  </tr>
+  <tr>
+    <td>Table</td>
+    <td>cell</td>
+  </tr>
+</table>
+```
+*/
+table {
+  width: 100%;
+  table-layout: fixed; }
+
+th {
+  font-weight: bold; }
+  th:hover {
+    background: #ccc; }
+
+th,
+td {
+  border-bottom: 1px solid #888; }
+
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+/*doc
+---
+title: Headings
+name: headings
+category: Typography
+---
+These are the heading sizes that you can use site wide. Each heading size is also
+available as a class.
+
+Heading                   | Element    | Class
+------------------------- | ---------- | -----------------
+<h1>Heading 1</h1>        | `<h1>`     | `heading-1`
+<h2>Heading 2</h2>        | `<h2>`     | `heading-2`
+<h3>Heading 3</h3>        | `<h3>`     | `heading-3`
+<h4>Heading 4</h4>        | `<h4>`     | `heading-4`
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; }
+
+h1,
+.heading1 {
+  font-size: 48px;
+  line-height: 56px; }
+
+h2,
+.heading2 {
+  font-size: 36px;
+  line-height: 42px; }
+
+h3,
+.heading3 {
+  font-size: 28px;
+  line-height: 35px; }
+
+h4,
+.heading4 {
+  font-size: 18px;
+  line-height: 21px; }
+
+/*doc
+---
+title: Text
+name: text
+category: Typography
+---
+These are the text elements you can use site wide.
+
+```html_example
+<p>Paragraph</p>
+<blockquote>Blockquote</blockquote>
+<p>Paragraphy with <a href="#">inline link</a></p>
+```
+*/
+a {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.1s linear; }
+  a:active, a:focus, a:hover {
+    color: #5cb85c; }
+  a:active, a:focus {
+    outline: none; }
+
+hr {
+  border-bottom: 1px solid #222;
+  border-left: none;
+  border-right: none;
+  border-top: none; }
+
+/*doc
+---
+title: Alerts
+name: alerts
+category: Components
+---
+Alerts can be used to display important messages.
+
+```html_example
+<div class="alert alert--info">Information alert</div>
+
+<div class="alert alert--warning">Warning alert</div>
+
+<div class="alert alert--error">Error alert</div>
+
+<div class="alert alert--success">Success alert</div>
+```
+*/
+.alert {
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  color: #f2f2f2; }
+
+.alert--info {
+  background: #337ab7;
+  border-color: #204d74; }
+
+.alert--warning {
+  background: #f0ad4e;
+  border-color: #eea236; }
+
+.alert--error {
+  background: #d9534f;
+  border-color: #d43f3a; }
+
+.alert--success {
+  background: #5cb85c;
+  border-color: #4cae4c; }
+
+/**
+ * @file
+ *  Buttons.
+ */
+/*doc
+---
+title: Buttons
+name: button
+category: components
+---
+
+Buttons are typically applied to `a` or `button` elements.
+
+```html_example
+<a href="#" class="button">A link.</a>
+<button class="button">A button</button>
+```
+*/
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 0.5em;
+  background: #ccc;
+  border: 1px solid #888;
+  color: #888; }
+
+/*doc
+---
+title: Button sizes
+name: button_size
+parent: button
+---
+
+Buttons have 3 sizes: small, medium (default), and large. Buttons also have an
+additional modifier class of full width.
+
+Button                                                            | Modifier Class
+----------------------------------------------------------------- | -----------------
+<button class="button button--large">Large</button>               | `button--large`
+<button class="button">Default</button>                           | `button`
+<button class="button button--small">Small</button>               | `button--small`
+<button class="button button--full-width">Full width</button>     | `button--fullwidth`
+*/
+.button--large {
+  font-size: 18px;
+  line-height: 28px; }
+
+.button--small {
+  font-size: 10px;
+  line-height: 14px; }
+
+.button--full-width {
+  display: block;
+  width: 100%; }
+
+/*doc
+---
+title: Button skins
+name: button_skin
+parent: button
+---
+Button                                                          | Class
+--------------------------------------------------------------- | -----------------
+<button class="button">Standard</button>                        | `button`
+<button class="button button--info">Info</button>               | `button--info`
+<button class="button button--warning">Warning</button>         | `button--warning`
+<button class="button button--error">Error</button>             | `button--error`
+<button class="button button--success">Success</button>         | `button--success`
+*/
+.button--error {
+  background: #d9534f;
+  border-color: #d43f3a;
+  color: #f2f2f2; }
+
+.button--warning {
+  background: #f0ad4e;
+  border-color: #eea236;
+  color: #f2f2f2; }
+
+.button--info {
+  background: #337ab7;
+  border-color: #204d74;
+  color: #f2f2f2; }
+
+.button--success {
+  background: #5cb85c;
+  border-color: #4cae4c;
+  color: #f2f2f2; }
+
+/*doc
+---
+title: Panels
+name: panels
+category: Components
+---
+Panels can be used to display content within the site.
+
+```html_example_table
+<div class="panel">
+  <div class="panel__content">
+    <p>Stuff inside a panel</p>
+   </div>
+</div>
+```
+*/
+.panel {
+  border: 1px solid #888;
+  border-radius: 6px;
+  background: #f2f2f2;
+  margin-bottom: 20px; }
+
+.panel__content {
+  padding: 10px 20px; }
+
+/*doc
+---
+title: Titled panels
+name: panels_title
+parent: panels
+---
+Panels can be with titles.
+
+```html_example_table
+<div class="panel">
+  <h2 class="panel__title">
+    Panel title
+  </h2>
+  <div class="panel__content">
+    <p>Stuff inside a panel</p>
+   </div>
+</div>
+```
+*/
+.panel__title {
+  margin: 0;
+  padding: 0 20px;
+  line-height: 24px;
+  font-size: 18px;
+  background: #ccc;
+  border-bottom: 1px solid #888; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,54 @@
+/*doc
+---
+title: Panels
+name: panels
+category: Components
+---
+Panels can be used to display content within the site.
+
+```html_example_table
+<div class="panel">
+  <div class="panel__content">
+    <p>Stuff inside a panel</p>
+   </div>
+</div>
+```
+*/
+.panel {
+  border: 1px solid $dark-grey;
+  border-radius: 6px;
+  background: $near-white;
+  margin-bottom: 20px;
+}
+
+  .panel__content {
+    padding: 10px 20px;
+  }
+
+/*doc
+---
+title: Titled panels
+name: panels_title
+parent: panels
+---
+Panels can be with titles.
+
+```html_example_table
+<div class="panel">
+  <h2 class="panel__title">
+    Panel title
+  </h2>
+  <div class="panel__content">
+    <p>Stuff inside a panel</p>
+   </div>
+</div>
+```
+*/
+  .panel__title {
+    margin: 0;
+    padding: 0 20px;
+    line-height: 24px;
+    font-size: 18px;
+    background: $light-grey;
+    border-bottom: 1px solid $dark-grey;
+  }
