@@ -35,3 +35,7 @@ code_example_renderers: ./bower_components/hologram-beam/code_renderers
 # If you want Hologram to exit on these warnings, set the value to 'true'
 # (Default value is 'false')
 exit_on_warnings: false
+
+# List all css to include for the styleguide render examples (path from styleguide directory)
+css_include:
+  - '../build/css/styles.css'
