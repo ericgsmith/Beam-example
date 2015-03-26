@@ -40,4 +40,4 @@ exit_on_warnings: false
 css_include:
   - '../build/css/styles.css'
 
-index: INDEX
+index: index
