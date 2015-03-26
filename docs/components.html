@@ -1,0 +1,162 @@
+<h1 id="alerts" class="styleguide">Alerts</h1>
+<p class="styleguide">Alerts can be used to display important messages.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="alert alert--info">Information alert</div>
+
+<div class="alert alert--warning">Warning alert</div>
+
+<div class="alert alert--error">Error alert</div>
+
+<div class="alert alert--success">Success alert</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--info"</span><span class="nt">&gt;</span>Information alert<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--warning"</span><span class="nt">&gt;</span>Warning alert<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--error"</span><span class="nt">&gt;</span>Error alert<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--success"</span><span class="nt">&gt;</span>Success alert<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="button" class="styleguide">Buttons</h1>
+<p class="styleguide">Buttons are typically applied to <code class="styleguide">a</code> or <code class="styleguide">button</code> elements.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <a href="#" class="button">A link.</a>
+<button class="button">A button</button>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>A link.<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>A button<span class="nt">&lt;/button&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="button_size" class="styleguide">Button sizes</h2>
+<p class="styleguide">Buttons have 3 sizes: small, medium (default), and large. Buttons also have an
+additional modifier class of full width.</p><table class="styleguide"> <tr>
+<th>Button</th>
+<th>Modifier Class</th>
+</tr>
+ <tr>
+<td><button class="button button--large">Large</button></td>
+<td><code class="styleguide">button--large</code></td>
+</tr>
+<tr>
+<td><button class="button">Default</button></td>
+<td><code class="styleguide">button</code></td>
+</tr>
+<tr>
+<td><button class="button button--small">Small</button></td>
+<td><code class="styleguide">button--small</code></td>
+</tr>
+<tr>
+<td><button class="button button--full-width">Full width</button></td>
+<td><code class="styleguide">button--fullwidth</code></td>
+</tr>
+ </table>
+<h2 id="button_skin" class="styleguide">Button skins</h2>
+<table class="styleguide"> <tr>
+<th>Button</th>
+<th>Class</th>
+</tr>
+ <tr>
+<td><button class="button">Standard</button></td>
+<td><code class="styleguide">button</code></td>
+</tr>
+<tr>
+<td><button class="button button--info">Info</button></td>
+<td><code class="styleguide">button--info</code></td>
+</tr>
+<tr>
+<td><button class="button button--warning">Warning</button></td>
+<td><code class="styleguide">button--warning</code></td>
+</tr>
+<tr>
+<td><button class="button button--error">Error</button></td>
+<td><code class="styleguide">button--error</code></td>
+</tr>
+<tr>
+<td><button class="button button--success">Success</button></td>
+<td><code class="styleguide">button--success</code></td>
+</tr>
+ </table>
+<h1 id="panels" class="styleguide">Panels</h1>
+<p class="styleguide">Panels can be used to display content within the site.</p><div class="codeTable">
+  <table>
+    <tbody>
+      
+        <tr>
+          <th>
+            <div class="exampleOutput">
+              <div class="panel">
+  <div class="panel__content">
+    <p>Stuff inside a panel</p>
+   </div>
+</div>
+
+            </div>
+          </th>
+          <td>
+            <div class="codeBlock">
+              <div class="highlight">
+                <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel__content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Stuff inside a panel<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+              </div>
+            </div>
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+<h2 id="panels_title" class="styleguide">Titled panels</h2>
+<p class="styleguide">Panels can be with titles.</p><div class="codeTable">
+  <table>
+    <tbody>
+      
+        <tr>
+          <th>
+            <div class="exampleOutput">
+              <div class="panel">
+  <h2 class="panel__title">
+    Panel title
+  </h2>
+  <div class="panel__content">
+    <p>Stuff inside a panel</p>
+   </div>
+</div>
+
+            </div>
+          </th>
+          <td>
+            <div class="codeBlock">
+              <div class="highlight">
+                <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"panel__title"</span><span class="nt">&gt;</span>
+    Panel title
+  <span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel__content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Stuff inside a panel<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+              </div>
+            </div>
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+</div>
+
