@@ -10,7 +10,7 @@ This is simply a quick and dirty collection of CSS to showcase / test this style
 guide theme.
 
 ## Usage
-View the compiled [styleguide](http://ericgsmith.github.io/beam-example/docs).
+View the compiled [styleguide](http://ericgsmith.github.io/Beam-example/docs).
 
 ## Play
 Clone the repo and install [Beam](https://github.com/ericgsmith/Beam) via Bower.
